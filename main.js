@@ -104,7 +104,7 @@ console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
 // задание 6
 let input;
 const numbers = [];
-let total = 0;ё
+let total = 0;
 
 while (true) {
     input = prompt("Введіть число (фбо Cancel)");
