@@ -102,31 +102,26 @@ console.log(checkForSpam('Get best sale offers now!')); // true
 console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
 
 // задание 6
-// let input;
-// const numbers = [];
-// let total = 0;
-// let a = true;
-// while (a) {
-//     input = prompt("Введіть число:");
-    
-//     if (input === null) {
-//         break; 
-//     }
-    
-//     const number = Number(input);
-    
-//     if (isNaN(number)) {
-//         alert("Это не число!");
-//         continue;
-//     }
-    
-//     numbers.push(number);
-// }
+let input;
+const numbers = [];
+let total = 0;ё
 
-// for (const num of numbers) {
-//     total += num;
-// }
+while (true) {
+    input = prompt("Введіть число (фбо Cancel)");
+    if (input === null) {
+        break;
+    }
+    const number = Number(input);
+    if (isNaN(number)) {
+        alert("Це не число, попробуйте ще раз");
+        continue;
+    }
+    numbers.push(number);
+}
 
-// if (numbers.length > 0) {
-//     console.log(`Сума всіх чисел: ${total}`);
-// }
+if (numbers.length > 0) {
+    for (const num of numbers) {
+        total += num;
+    }
+    console.log(total);
+}
